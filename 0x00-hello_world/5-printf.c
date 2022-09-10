@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
-Ã*main - prints a text
+*main - prints a text
 *
 *Return: Always 0 (Success)
 */
 {printf("with proper grammar, but the outcome is a piece of art,\n");
 return (0);
+}
+
