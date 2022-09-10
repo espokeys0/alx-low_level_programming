@@ -1,11 +1,11 @@
 #!/bin/bash
 #include <stdio.h>
 /**
- * main - main block
- * Return: 0
- */
+* main - entry point
+*
+* return: 0 after printing the function
+*/
 int main(void)
-{
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+{puts("\"programing is like building a multilingual puzzle");
+     return(0);
 }
