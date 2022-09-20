@@ -2,19 +2,28 @@
 #include "main.h"
 
 /**
-*puts2 - print every other character
-*@str: String
-Ã*Return: nothing
+*rev_string -  reverses a string
+*@s: pointer to String
+*
+*Return: void()
 */
 
-void puts2(char *str);
+void rev_string(char *s)
 {
-int i = 0;
-
-while (*(str + i) != '\	0')
+int i, j, k, temp;
+int i;
+while (s[i] != '\0')
 {
-if (i % 2 == 0)
+i++;
 }
-putchar(*(str + i));
-putcher(10);
+k = 0;
+j = i - 1;
+while (k < j)
+{
+temp = s[k];
+s[k] = s[j];
+s[j] = temp;
+k++;
+j--;
+}
 }
