@@ -4,7 +4,7 @@
 
 /**
 *_strncat - concatenates two strings
-*@dest: strig to be appended upon
+*@dest: string to be appended upon
 *@src: string to be completed at end of dest
 *@n: integer parameter
 *Return: return new concatenated string
