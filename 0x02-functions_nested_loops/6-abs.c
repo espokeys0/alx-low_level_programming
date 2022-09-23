@@ -6,9 +6,8 @@
 *Return: the absolute value of int
 */
 
-int _abs(int)
+int _abs(int c)
 {
-int c;
 if (c > 0 || c == 0)
 {
 return (c);
