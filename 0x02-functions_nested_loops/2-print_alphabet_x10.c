@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
 *print_alphabet_10 - print 10 times the alphabet 
@@ -26,4 +27,3 @@ while (i < 10)
 }
 
 }
-
