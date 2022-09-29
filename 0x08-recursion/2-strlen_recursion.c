@@ -2,10 +2,7 @@
 
 /**
  *_strlen_recursion - print the length of a string
- *@s: String
-
- *
- 
+ *@s: pointer block of memory to fill
  *Return: length of String
  */
 

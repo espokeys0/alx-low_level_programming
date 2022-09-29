@@ -1,21 +1,48 @@
 #include "main.h"
 
-int find_strlen(char *s);
-int check_palindrome(char *s, int len, int index);
-int is_palindrome(char *s);
-
 /**
- *find_strlen - Return the length of a String
- *@s: the String
- *
- *Return: the length of the string
+ *_strlen_recursion - size
+ *@s: pointer to String params
+ *Return: recursion
  */
 
-int find_strlen(char *s)
-{
-int len = 0;
-
-if (*(s + len))
+int _strlen_recursion(char *s)
 {
 
+if (!*s)
+{
+return (0);
+}
+return (1 + _strlen_recursion(++s));
+}
+/**
+ *p1 - palindrome
+ *@s: pointer to String
+ *@l: position
+ *Return: boolena
+ */
+
+int p1(char *s, int 1)
+{
+if (l < 1)
+{
+return (1);
+}
+if (*s == *(s + l))
+{
+return (p1(s + 1, l - 2));
+}
+return (0);
+}
+/**
+ *is_palindrome - palindrome
+ *@s: pointer to string
+ *Return: recursion
+ */
+
+int is_palindrome(char *s)
+{
+int len = _srtlen_recursion(s);
+
+return (p1(s, len - 1));
 }

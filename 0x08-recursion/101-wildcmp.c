@@ -1,17 +1,30 @@
 #include "main.h"
-int strlen_no_wilds(char *str);
-void iterate_wild(char **wildstr);
-char *postfix_match(char *str, char *postfix);
-int wildcmp(char *s1, char *s2);
+
 
 /**
- *strlen_no_wilds - Return the length of a string
- *@str: the string 
- *
- *Return: the length
+ *wildcmp - compare strings
+ *@s1: pointer to be string params
+ *@s2: pointer to be string params
+ *Return: 0
  */
 
-int strlen_no_wilds(char *str)
+int wildcmp(char *s1, char *s2)
 {
-int len = 0, index = 0;
+if (*s1 == '\0')
+{
+if (*s2 != '\0' && *s2 == '*')
+{
+return (wildcmp(s1, s2 + 1));
+}
+return (*s2 == '\0');
+}
+if (*s2 == '*')
+{
+return (wildcmp(s1 + 1, s2) || wildcmp(s1, s2 + 1));
+}
+else if (*s1 == *s2)
+{
+return (wildcmp(s1 + 1, s2 + 1));
+}
+return (0);
 }
