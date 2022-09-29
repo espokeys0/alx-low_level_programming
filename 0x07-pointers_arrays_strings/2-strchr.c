@@ -4,6 +4,7 @@
 *_strch - locates a character in a string
 *@s: string to check
 *@c: character to check for
+
 *Return: pointer to spot in swith c or null
 */
 
