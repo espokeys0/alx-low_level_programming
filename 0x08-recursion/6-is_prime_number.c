@@ -9,6 +9,7 @@
 
 int evaluate_num(int num, int iterator)
 {
+int iterator = 0;
 if (iterator == num - 1)
 {
 return (1);
