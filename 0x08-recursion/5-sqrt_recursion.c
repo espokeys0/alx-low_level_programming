@@ -4,7 +4,6 @@
  *_evaluate - evaluate function sqrt
  *@i: integer
  *@n: integer
-
  *Return: evaluate sqrt
  */
 
