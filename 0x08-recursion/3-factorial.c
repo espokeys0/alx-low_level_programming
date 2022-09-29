@@ -9,13 +9,15 @@
 
 int factorial(int n)
 {
-int result = n;
+int next_factorial;
 
 if (n < 0)
 
 return (-1);
 
-else if (n >= 0 && n <= 1)
-
+else if (n == 0)
 return (1);
+nex_factorial = factorial(n - 1);
+
+return (n * nex_factorial);
 }
