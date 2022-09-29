@@ -1,19 +1,23 @@
 #include "main.h"
-#include <stdio.h>
-
-char *_strchr(char *, char);
 
 /**
- *main - check the code for Holberton School students.
- *
- *Return: Always 0.
- */
-int main(void)
-{
-	char *s = "First, solve the problem. Then, write the code.";
-	char *f;
+*_strch - locates a character in a string
+*@s: string to check
+*@c: character to check for
+*Return: pointer to spot in swith c or null
+*/
 
-	f = _strchr(s, '\0');
-	printf("%s\n", (f == NULL ? "nil" : f));
-	return (0);
+char *_strchr(char *s, char c)
+{
+int i = 0;
+
+for (; s[i] >= '\0'; i++)
+{
+if (s[i] == c)
+
+return (&s[i]);
 }
+
+return (0);
+}
+
