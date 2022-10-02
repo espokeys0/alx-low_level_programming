@@ -7,14 +7,16 @@
  *@argc: count arguments
  *@argv: arguments
  *
- *Return: Always 0 if true, 1 if false
+ *Return: Always 0 
  */
 
 int main(int argc, char *argv[])
 {
 int a, b, mul;
-if (argc != 3)
+
+if (argv != 3)
 printf("ERROR\n");
+
 else
 {
 a = atoi(argv[1]);
