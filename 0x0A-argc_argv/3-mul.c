@@ -20,8 +20,7 @@ b = atoi(argv[2]);
 printf("%d\n", a * b);
 return (0);
 }
-(void) argc;
 printf("ERROR\n");
-return (0);
+return (1);
 }
 
