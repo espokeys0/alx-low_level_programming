@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
+
 /**
  *_strdup - return a pointer to a newly allocated
  *space in memory, which a copy of the
@@ -10,26 +13,26 @@
 
 char *_strdup(char *str)
 {
-char *cpy;
-int index, len;
+char *array;
+int i, r = 0;
 
 if (str == NULL)
 return (NULL);
 
-for (index = 0; str[index]; index++)
-len++;
+i = 0;
 
-cpy = malloc(sizeof(char) * (len + 1));
+while (str[i] != '\0')
+i++;
 
-if (cpy = NULL)
+array = malloc(sizeof(char) * (i + 1));
+
+if (array == NULL)
 return (NULL);
 
-for (index = 0; str[index]; index++)
+for (r = 0; str[r]; r++)
 {
-cpy[index] = str[index];
+array[r] = str[r];
 }
 
-cpy[len] = '\0';
-
-return (cpy);
+return (array);
 }
