@@ -7,7 +7,6 @@
  *space in memory, which a copy of the
  *string given as a parameter
  *@str: string 
- *
  *Return: NULL 
  */
 
