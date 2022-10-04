@@ -27,7 +27,7 @@ ci++;
 
 concat = malloc(sizeof(char) * (i + ci + 1));
 
-if (concat == NULL);
+if (concat == NULL)
 return (NULL);
 
 i = ci = 0;
