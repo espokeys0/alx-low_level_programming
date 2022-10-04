@@ -3,13 +3,9 @@
 #include <stdio.h>
 
 /**
- *_strdup - return a pointer to a newly allocated
- *space in memory, which a copy of the
- *string given as a parameter
- *@str: string
- * 
- *Return: NULL 
- *space
+ *_strdup - duplicate to new memory space location
+ *@str: char
+ *Return: 0
  */
 
 char *_strdup(char *str)
