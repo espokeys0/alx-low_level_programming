@@ -18,7 +18,7 @@ return (NULL);
 
 array = malloc(sizeof(int *) * heigth);
 
-if (array == NULL);
+if (array == NULL)
 return (NULL);
 
 for (x = 0; x < heigth; x++)
