@@ -6,6 +6,7 @@
  *main - pints the multiplication of two integer
  *@argc: count arguments
  *@argv: arguments
+ *
  *Return: Always 0 
  */
 
