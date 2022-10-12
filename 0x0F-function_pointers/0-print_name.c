@@ -1,3 +1,7 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  *print_name - print a name
  *@name: pointer to name
