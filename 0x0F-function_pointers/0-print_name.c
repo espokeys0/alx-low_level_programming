@@ -1,6 +1,4 @@
 #include "function_pointers.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  *print_name - print a name
@@ -8,7 +6,7 @@
  *@f: function pointer
  *
  *Return: void
-
+ */
  void print-name(char *name, void (*f)(char *))
  {
 
