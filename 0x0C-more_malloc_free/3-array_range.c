@@ -4,6 +4,7 @@
  *array_range - creates an array of integers
  *@min: minimums
  *@max: maximums
+ *
  *Return: array
  */
 
