@@ -24,8 +24,8 @@ return (len);
  *@age: the age of the dog
  *@owner: the owner of the dog
  *
- * *Return: the new struct dog
- * */
+ *Return: the new struct dog
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *doggo;
